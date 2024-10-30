@@ -21,6 +21,7 @@ with open("status_responses.json", "r") as file:
 
 
 def get_message(status_code):
+    
     return status_responses.get(str(status_code), "Unknown Status")
 
 async def get_user(username: str):
